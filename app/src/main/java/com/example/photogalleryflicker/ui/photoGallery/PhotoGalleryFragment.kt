@@ -10,8 +10,9 @@ import androidx.fragment.app.viewModels
 import com.example.photogalleryflicker.R
 import com.example.photogalleryflicker.databinding.FragmentPhotoGalleryBinding
 import com.example.photogalleryflicker.ui.adapter.PhotoAdapter
+import dagger.hilt.android.AndroidEntryPoint
 
-
+@AndroidEntryPoint
 class PhotoGalleryFragment : Fragment() {
 
     private val mViewModel: PhotoGalleryViewModel by viewModels()
