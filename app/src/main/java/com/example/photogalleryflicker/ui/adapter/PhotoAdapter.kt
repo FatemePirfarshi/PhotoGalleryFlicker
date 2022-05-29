@@ -7,7 +7,6 @@ import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.bumptech.glide.Glide
 import com.example.photogalleryflicker.R
 import com.example.photogalleryflicker.databinding.ItemListPhotoGalleryBinding
 import com.example.photogalleryflicker.model.GalleryItemResponse
@@ -43,11 +42,8 @@ class PhotoAdapter() :
             galleryItem: GalleryItemResponse.Photos.Photo,
             binding: ItemListPhotoGalleryBinding
         ) {
-
-            Glide.with(view.context)
-                .load(galleryItem.urlS)
-                .fitCenter()
-                .into(binding.ivPhoto)
+//            binding.setVariable(BR.imageUrl,galleryItem.urlS)
+            binding.imageUrl = galleryItem.urlS
         }
 
     }

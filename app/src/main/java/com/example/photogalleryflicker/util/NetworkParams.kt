@@ -1,4 +1,4 @@
-package com.example.photogalleryflicker.data.util
+package com.example.photogalleryflicker.util
 
 class NetworkParams {
     companion object {

@@ -1,8 +1,7 @@
 package com.example.photogalleryflicker.di
 
 import com.example.photogalleryflicker.data.network.ApiService
-import com.example.photogalleryflicker.data.util.NetworkParams
-import dagger.Binds
+import com.example.photogalleryflicker.util.NetworkParams
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
